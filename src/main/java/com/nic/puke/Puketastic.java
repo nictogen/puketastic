@@ -23,5 +23,6 @@ public class Puketastic
     {
         NETWORK_WRAPPER.registerMessage(MessageSyncPukeCap.Handler.class, MessageSyncPukeCap.class, 0, Side.CLIENT);
         CapabilityManager.INSTANCE.register(IPukeCapability.class, new PukeCapability.Storage(), PukeCapability::new);
+
     }
 }
